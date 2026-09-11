@@ -1,0 +1,81 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: rgba(105, 116, 255, 0.35);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050609;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #202431;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #30374a;
+}
+
+img,
+svg {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 1px solid #7b86ff;
+  outline-offset: 3px;
+}
+
+/* ICON ALIGNMENT FIX */
+
+svg {
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+button svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.nav-item svg {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.primary-button svg,
+.secondary-button svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.stat-icon svg,
+.goal-mini-icon svg,
+.goal-modal-icon svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
