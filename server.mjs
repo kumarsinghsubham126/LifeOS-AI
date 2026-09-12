@@ -66,9 +66,8 @@ app.post('/api/chat', async (req, res) => {
   }
 })
 
-const server = app.listen(PORT, '127.0.0.1', () => {
-  console.log('')
-  console.log('LifeOS AI server running on http://127.0.0.1:3001')
+const server = app.listen(PORT, '0.0.0.0', () => {
+  console.log(`LifeOS AI server running on port ${PORT}`)
 })
 
 server.on('error', (error) => {
