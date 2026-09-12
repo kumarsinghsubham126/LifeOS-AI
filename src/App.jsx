@@ -3461,7 +3461,7 @@ export default function App() {
 
     try {
       const response = await fetch(
-        'http://127.0.0.1:3001/api/chat',
+        'https://lifeos-ai-h3yq.onrender.com/api/chat',
         {
           method: 'POST',
           headers: {
