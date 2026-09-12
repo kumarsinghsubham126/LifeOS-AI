@@ -7,9 +7,17 @@ import OpenAI from 'openai'
 const app = express()
 const PORT = 3001
 
-app.use(cors({
-  origin: 'http://localhost:5173',
-}))
+app.use(
+  cors({
+    origin: [
+      'http://localhost:5173',
+      'http://localhost:5177',
+      'https://lifeos-ai77.netlify.app',
+    ],
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type'],
+  })
+)
 
 app.use(express.json())
 
